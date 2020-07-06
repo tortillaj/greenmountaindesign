@@ -7,7 +7,7 @@ export default () => {
 
   return (
     <svg
-      height={100}
+      height={150}
       width="100%"
       viewBox={`0 0 649 375`}
       version="1.1"

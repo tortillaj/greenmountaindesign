@@ -17,26 +17,26 @@ export default () => {
 
         <Beam/>
 
-        <Box bg="secondary" px={[1, 2]} py={[0, 1]}>
+        <Box bg="secondary" px={[2, 3]} py={[1, 2]}>
           <Text as="p" sx={{
             color: 'text',
-            fontSize: 1,
+            fontSize: 3,
             fontWeight: 'bold',
           }}>
             We are open for business as usual during the COVID-19 pandemic.
           </Text>
         </Box>
 
-        <Text as="p" mt={2} sx={{
-          fontSize: 3,
+        <Text as="p" mt={3} sx={{
+          fontSize: 4,
         }}>
           ⚡ Building the Web.​⚡
         </Text>
 
         <Beam/>
 
-        <Text as="p" mt={2} sx={{
-          fontSize: 2,
+        <Text as="p" mt={3} sx={{
+          fontSize: 3,
         }}>
           <Link href="/" passHref>
             <NavLink>Projects</NavLink>
@@ -49,8 +49,8 @@ export default () => {
 
         <Beam/>
 
-        <Text as="p" mt={2} sx={{
-          fontSize: 2,
+        <Text as="p" mt={3} sx={{
+          fontSize: 3,
         }}>
           <strong>Calais, Vermont</strong> <br />
           <a sx={{ variant: 'styles.a' }} href="mailto:info@greenmountain.design">info@greenmountain.design</a><br />

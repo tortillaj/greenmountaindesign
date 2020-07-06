@@ -10,7 +10,7 @@ export default ({ children }) => {
       <Grid gap={[2, 4]} columns={[1, `1fr 3fr`, `1fr 4fr`]}>
         <Header/>
 
-        <Box as="main" sx={{ mt: [3, 122] }}>
+        <Box as="main" sx={{ mt: [3, 172] }}>
           {children}
         </Box>
       </Grid>

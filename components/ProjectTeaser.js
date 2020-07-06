@@ -30,8 +30,8 @@ export default (
             }}/>
           </div>
           <figcaption sx={{ py: [1, 2], px: [2, 3] }}>
-            <Heading as="h3">{title}</Heading>
-            <Text as="p" sx={{ fontSize: 1 }}>{meta}</Text>
+            <Heading as="h3" sx={{ fontSize: 5 }}>{title}</Heading>
+            <Text as="p" sx={{ fontSize: 2 }}>{meta}</Text>
           </figcaption>
         </a>
       </Link>

@@ -22,11 +22,11 @@ export default (frontMatter) => {
 
           <header>
             <Heading as="h1" mb={2} sx={{
-              fontSize: 3,
+              fontSize: 5,
             }}>{frontMatter.title}</Heading>
 
             <Text as="p" sx={{
-              fontSize: 2,
+              fontSize: 3,
             }}>{frontMatter.summary}</Text>
 
             <Text as="strong" variant="meta">Type of project</Text>

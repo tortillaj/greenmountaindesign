@@ -22,7 +22,7 @@ export const theme = merge(swiss, {
   },
   colors: {
     text: '#f7f7f7',
-    background: '#141414',
+    background: '#1b1b1b',
     primary: '#6dab9a',
     secondary: '#BF9393',
     tertiary: '#8A9EA6',
@@ -62,7 +62,7 @@ export const theme = merge(swiss, {
   },
   text: {
     meta: {
-      fontSize: 1,
+      fontSize: 2,
       textTransform: 'uppercase',
       display: 'block',
       mt: 3,
@@ -74,7 +74,7 @@ export const theme = merge(swiss, {
       px: 1,
       backgroundColor: 'quaternary',
       color: 'black',
-      fontSize: 1,
+      fontSize: 2,
       lineHeight: 1.5,
     }
   },
