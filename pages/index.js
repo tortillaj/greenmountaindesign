@@ -1,209 +1,61 @@
-import Head from 'next/head'
+import React from 'react'
+import {NextSeo} from 'next-seo'
+import { Grid } from 'theme-ui'
+
+import ProjectTeaser from '../components/ProjectTeaser'
+import DefaultLayout from '../components/DefaultLayout'
+
 
 export default function Home() {
   return (
-    <div className="container">
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main>
-        <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
-
-        <div className="grid">
-          <a href="https://nextjs.org/docs" className="card">
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className="card">
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className="card"
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="card"
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="logo" />
-        </a>
-      </footer>
-
-      <style jsx>{`
-        .container {
-          min-height: 100vh;
-          padding: 0 0.5rem;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-
-        main {
-          padding: 5rem 0;
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-
-        footer {
-          width: 100%;
-          height: 100px;
-          border-top: 1px solid #eaeaea;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        footer img {
-          margin-left: 0.5rem;
-        }
-
-        footer a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        a {
-          color: inherit;
-          text-decoration: none;
-        }
-
-        .title a {
-          color: #0070f3;
-          text-decoration: none;
-        }
-
-        .title a:hover,
-        .title a:focus,
-        .title a:active {
-          text-decoration: underline;
-        }
-
-        .title {
-          margin: 0;
-          line-height: 1.15;
-          font-size: 4rem;
-        }
-
-        .title,
-        .description {
-          text-align: center;
-        }
-
-        .description {
-          line-height: 1.5;
-          font-size: 1.5rem;
-        }
-
-        code {
-          background: #fafafa;
-          border-radius: 5px;
-          padding: 0.75rem;
-          font-size: 1.1rem;
-          font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-        }
-
-        .grid {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-wrap: wrap;
-
-          max-width: 800px;
-          margin-top: 3rem;
-        }
-
-        .card {
-          margin: 1rem;
-          flex-basis: 45%;
-          padding: 1.5rem;
-          text-align: left;
-          color: inherit;
-          text-decoration: none;
-          border: 1px solid #eaeaea;
-          border-radius: 10px;
-          transition: color 0.15s ease, border-color 0.15s ease;
-        }
-
-        .card:hover,
-        .card:focus,
-        .card:active {
-          color: #0070f3;
-          border-color: #0070f3;
-        }
-
-        .card h3 {
-          margin: 0 0 1rem 0;
-          font-size: 1.5rem;
-        }
-
-        .card p {
-          margin: 0;
-          font-size: 1.25rem;
-          line-height: 1.5;
-        }
-
-        .logo {
-          height: 1em;
-        }
-
-        @media (max-width: 600px) {
-          .grid {
-            width: 100%;
-            flex-direction: column;
-          }
-        }
-      `}</style>
-
-      <style jsx global>{`
-        html,
-        body {
-          padding: 0;
-          margin: 0;
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
-        }
-
-        * {
-          box-sizing: border-box;
-        }
-      `}</style>
-    </div>
+    <DefaultLayout>
+      <NextSeo title="Green Mountain Design & Development" />
+      <Grid gap={[2, 3]} columns={[1, 'repeat(2, 1fr)', 'repeat(3, 1fr)']}>
+        <ProjectTeaser title="IAS"
+                       slug="institute-for-advanced-studies"
+                       meta="web development, web design, complex workflows"
+                       image="static/images/projects/IAS/1500x1080 for Institute for Advanced Study.png"/>
+        <ProjectTeaser title="Baker Artist Portfolio"
+                       meta="web development, complex workflows"
+                       image="static/images/projects/Baker/Desktop-Homepage.png"/>
+        <ProjectTeaser title="Power To Decide"
+                       meta="data visualizations, art direction"
+                       image="static/images/projects/PTD/1920x1080 for Power to Decide, the campaign to prevent unplanned pregnancy | Power to Decide.png"/>
+        <ProjectTeaser title="IntelTrak"
+                       meta="data visualizations, web development"
+                       image="static/images/projects/RWR/Homepage.png"/>
+        <ProjectTeaser title="Clarifi"
+                       meta="web development"
+                       image="static/images/projects/Clarifi/Desktop-Homepage.png"/>
+        <ProjectTeaser title="Direxion"
+                       meta="web development"
+                       image="static/images/projects/Direxion/Homepage.png"/>
+        <ProjectTeaser title="Direxion"
+                       meta="web development, complex workflows"
+                       image="static/images/projects/Eos/Desktop-Homepage.png"/>
+        <ProjectTeaser title="Greatist"
+                       meta="performance tuning, web development"
+                       image="static/images/projects/Greatist/1024x768 for Greatist | Health and Fitness News, Tips, Recipes, and Exercises.png"/>
+        <ProjectTeaser title="Senator Harry Reid"
+                       meta="performance tuning, web development, complex workflows"
+                       image="static/images/projects/Harry Reid/Desktop-Homepage.png"/>
+        <ProjectTeaser title="hoopla"
+                       meta="performance tuning, web development, complex workflows"
+                       image="static/images/projects/hoopla/1024x768 for hoopla | streaming audiobooks, music, video & ebooks.png"/>
+        <ProjectTeaser title="IHE"
+                       meta="web development, complex workflows"
+                       image="static/images/projects/IHE/Desktop-Homepage.png"/>
+        <ProjectTeaser title="LSAC"
+                       meta="web development, art direction"
+                       image="static/images/projects/LSAC/1024x768 for The Law School Admission Council (LSAC) | The Law School Admission Council.png"/>
+        <ProjectTeaser title="Probo.ci"
+                       meta="web development, complex workflows, art direction"
+                       image="static/images/projects/Probo/1024x768-Doc-Homepage.png"/>
+        <ProjectTeaser title="Zivtech"
+                       meta="web development, art direction"
+                       image="static/images/projects/Zivtech/1024x768 for Zivtech | Open Source Web Development.png"/>
+      </Grid>
+    </DefaultLayout>
   )
 }
+
