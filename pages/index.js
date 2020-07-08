@@ -16,6 +16,7 @@ export default function Home() {
                        meta="web development, web design, complex workflows"
                        image="static/images/projects/IAS/1500x1080 for Institute for Advanced Study.png"/>
         <ProjectTeaser title="Baker Artist Portfolio"
+                       slug="baker-artist-portfolios"
                        meta="web development, complex workflows"
                        image="static/images/projects/Baker/Desktop-Homepage.png"/>
         <ProjectTeaser title="Power To Decide"
