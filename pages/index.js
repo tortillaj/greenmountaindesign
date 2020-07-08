@@ -20,6 +20,7 @@ export default function Home() {
                        meta="web development, complex workflows"
                        image="static/images/projects/Baker/Desktop-Homepage.png"/>
         <ProjectTeaser title="Power To Decide"
+                       slug="power-to-decide"
                        meta="data visualizations, art direction"
                        image="static/images/projects/PTD/1920x1080 for Power to Decide, the campaign to prevent unplanned pregnancy | Power to Decide.png"/>
         <ProjectTeaser title="IntelTrak"

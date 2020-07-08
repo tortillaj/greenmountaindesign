@@ -16,11 +16,11 @@ export default (frontMatter) => {
         <Beam />
 
         <Flex sx={{ flexDirection: ['column-reverse', 'row'] }} as="article">
-          <div sx={{ mt: [4, 0], mr: [0, 4] }}>
+          <div sx={{ mt: [4, 0], mr: [0, 4], width: ['100%', '70%'] }}>
             {children}
           </div>
 
-          <header>
+          <header sx={{ width: ['100%', '30%'] }}>
             <Heading as="h1" mb={2} sx={{
               fontSize: 5,
             }}>{frontMatter.title}</Heading>
