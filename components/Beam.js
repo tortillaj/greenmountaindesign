@@ -7,7 +7,7 @@ export default ({ ...delegated }) => (
     height: 12,
     my: [2, 3],
     background: `linear-gradient(to left, #D9AF8B, #BF9393, #8A9EA6, #6dab9a)`,
-    '&:first-child': {
+    '&:first-of-type': {
       mt: 0,
     }
   }} {...delegated} />
