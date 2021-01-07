@@ -52,7 +52,7 @@ export default () => {
         <Text as="p" mt={3} sx={{
           fontSize: 3,
         }}>
-          <strong>Calais, Vermont</strong> <br />
+          <strong>Brookfield, Vermont</strong> <br />
           <a sx={{ variant: 'styles.a' }} href="mailto:info@greenmountain.design">info@greenmountain.design</a><br />
           <a sx={{ variant: 'styles.a' }} href="tel:802-456-0013">802-456-0013</a>
         </Text>
